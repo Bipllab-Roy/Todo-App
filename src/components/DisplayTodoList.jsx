@@ -1,10 +1,15 @@
+import useTodo from '@/hooks/useTodo';
 import React from 'react'
+import TodoList from './TodoList';
+import { Flex } from '@chakra-ui/react';
 
-const DisplayTodoList = ({children}) => {
+const DisplayTodoList = () => {
+  
+  const {  todo } = useTodo();
   return (
-    <div>
-      {children}
-    </div>
+    <Flex flexDirection={"column"} gap={"2"}>
+      {todo?.map((t)=> <TodoList key={t.id||0} todo={t}/>)}
+    </Flex>
   )
 }
 
