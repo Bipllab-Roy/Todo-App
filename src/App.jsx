@@ -8,9 +8,9 @@ import { Box, Stack } from "@chakra-ui/react";
 
 const App = () => {
   return (
-    <Box maxW={"800px"} marginTop={"20"} marginX={"auto"} bg={"green.100"}  border={"1px solid green"}>
+    <Box maxW={"800px"} marginTop={"20"} marginX={"auto"} bg={"green.100"}  borderRadius={"10px"}>
       <Stack>
-       <Box padding={""} marginTop={"30px"}  borderBottom={"px solid green"}>
+       <Box padding={""} marginTop={"30px"}  >
          <TotalTask />
        </Box>
        <Box>
